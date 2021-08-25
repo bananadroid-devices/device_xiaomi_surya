@@ -23,3 +23,6 @@ get_prop(xiaomiparts_app, persist_lcd_prop)
 set_prop(xiaomiparts_app, persist_lcd_prop)
 
 binder_call(xiaomiparts_app, gpuservice)
+
+# Theme prop for persist.sys.theme.accentcolor
+allow xiaomiparts_app theme_prop:file { read } ;
